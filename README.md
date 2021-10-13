@@ -2,4 +2,6 @@
 
 Developed with HTML, CSS (Bootstrap).
 
-[LIVE PREVIEW](https://naimackerman.github.io/login-and-contact-form)
+[Login Form](https://naimackerman.github.io/login-and-contact-form)
+
+[Contact Form](https://naimackerman.github.io/login-and-contact-form/contact-form.html)
