@@ -12,65 +12,117 @@
         body {
             margin: 0;
             padding: 0;
-            background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
             font-family: sans-serif;
-        }
-        #login .container #login-row #login-column #login-box {
-            margin-top: 120px;
-            max-width: 600px;
-            border-radius: 1rem;
-            background-color: white;
-        }
-        #login .container #login-row #login-column #login-box #login-form {
-            padding: 20px;
-        }
-        .text {
-            color: #0062cc;
-        }
-        .btn-submit {
-            border-radius: 1rem;
-            background-color: #0062cc;
             color: white;
         }
+        .btn-submit {
+            border-radius: 0.5rem;
+            background-color: #C70150;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-login {
+            border-radius: 0.5rem;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
         .form-control {
-            border-radius: 1rem;
+            border-radius: 0.5rem;
+        }
+        .box {
+            padding: 16% 8%;
+            background-color: #0F043F;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 16px 4px #47066e;
+        }
+        a {
+            color: #C70150;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #C70150;
+        }
+        body:after {
+            content:'';
+            background: url('./bg-1.jpg') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <div id="login">
-        <h3 class="text-center text-white pt-5">Login Form</h3>
-        <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text">Login</h3>
-                            <div class="form-group">
-                                <label for="username" class="text">Username:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
+    <div class="header">
+        <h3 class="text-center mt-5 mb-5">Login Form</h3>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="col-md-12 box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="h5"><strong>Masuk</strong></p>
+                        </div>
+                        <div class="text-right col-md-6">
+                            <a href="#" class="daftar small">Daftar</a>
+                        </div>
+                    </div>
+                    <br>
+                    <form class="form" action="" method="post">
+                        <div class="form-group">
+                            <label for="username" class="text"><strong>Username</strong></label><br>
+                            <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text"><strong>Password</strong></label><br>
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <input id="remember-me" name="remember-me" type="checkbox">
+                                <label for="remember-me" class="text">Ingat saya</label>
                             </div>
-                            <div class="form-group">
-                                <label for="password" class="text">Password:</label><br>
-                                <input type="password" name="password" id="password" class="form-control">
+                            <div class="text-right col-md-6">
+                                <a href="#" class="text small">Lupa kata sandi?</a>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <a href=""><label for="remember-me" class="text">Remember me</label></a>
-                                    <input id="remember-me" name="remember-me" type="checkbox">
+                        </div>
+                        <div class="form-group">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-block btn-submit">Masuk</button>
+                            </div>
+                            <div class="row align-items-center mt-3">
+                                <div class="col">
+                                    <hr>
                                 </div>
-                                <div class="text-right col-md-6">
-                                    <a href="#" class="text">Register here</a>
+                                <div class="col-">
+                                    <span class="small">atau masuk dengan</span>
+                                </div>
+                                <div class="col">
+                                    <hr>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit btn-md col-md-4" value="Log in">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-block mt-3 btn-login">Google</button>
+                                <button type="button" class="btn btn-block mt-3 btn-login">Scan Kode QR</button>
                             </div>
-                        </form>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col text-center">
+                            <span class="small">Butuh bantuan? <a href="./contact-form.html">Hubungi</a> </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer text-center pt-5 small">
+        &copy; Nur Ahmad Khatim PWEB-B 2021
     </div>
 </body>
 </html>
